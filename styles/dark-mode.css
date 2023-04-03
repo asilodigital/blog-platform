@@ -76,9 +76,9 @@ html.casper body.dark .post-full-custom-excerpt {
   color: color-mod(var(--midgrey) l(+10%));
 }
 
-html.casper body.dark .post-full-image {
+/* html.casper body.dark .post-full-image {
   background-color: color-mod(var(--darkmode) l(+8%));
-}
+} */
 
 html.casper body.dark .post-full-byline {
   border-top-color: color-mod(var(--darkmode) l(+15%));
