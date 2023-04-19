@@ -69,7 +69,7 @@ export const PostCard = ({ settings, post, num, isHome, isBranded }: PostCardPro
             )}
             <header className="post-card-header">
               {post.primary_tag &&
-                <div className={`w-[75px] min-h-min min-w-min text-${dark === 'dark' ? 'white' : 'black'} text-center text-lg font-semibold border border-solid border-gray-500 rounded-[22px] my-4 px-6 py-2`}>
+                <div className={`w-[75px] min-h-min min-w-min text-black dark:text-white text-center text-lg font-semibold border border-solid border-gray-500 rounded-[22px] my-4 px-6 py-2`}>
                   {post.primary_tag.name}
                 </div>
               }

@@ -114,6 +114,12 @@ export const Post = ({ cmsData }: PostProps) => {
                             `}
                         {...featImg.dimensions}
                       />
+
+                      <figcaption className="w-full flex text-[#999] bg-white dark:bg-[#0E0C15] leading-normal justify-end mt-1 [&>a]:px-1 [&>a]:no-underline [&>a]:text-black dark:[&>a]:text-white"
+
+                        dangerouslySetInnerHTML={{__html: `${post.feature_image_caption ?? ''}`}}>
+
+                      </figcaption>
                     </figure>
                   ) : (
                     post.feature_image && (
@@ -122,13 +128,6 @@ export const Post = ({ cmsData }: PostProps) => {
                       </figure>
                     )
                   ))}
-
-                  <p className="w-full flex justify-center"
-                    dangerouslySetInnerHTML={{
-                      __html:post.feature_image_caption ?? ''
-                    }}>
-
-                  </p>
 
                   <div className="post-full-byline pb-12">
                     <section className="post-full-byline-content">

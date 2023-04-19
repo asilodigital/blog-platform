@@ -1091,7 +1091,7 @@ html.casper .post-full-image {
     align-items: center;
     overflow: hidden;
     margin: 25px 22px;
-    background: color-mod(var(--lightgrey) l(+10%));
+    /* background: color-mod(var(--lightgrey) l(+10%)); */
     border-radius: 3px;
 }
 
