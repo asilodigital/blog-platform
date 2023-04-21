@@ -66,7 +66,7 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
                 title
               )}
             </h1>
-            <h2 className="site-description">{/* site.description */"Hacemos de la información tecnológica en español algo colaborativo y abierto, manteniendo siempre el enfoque en la comunidad"}</h2>
+            <h2 className="site-description">{/* site.description */"Hacemos de la español algo colaborativo y abierto, manteniendo siempre el enfoque en la comunidad"}</h2>
             <div className="site-header-buttons-container">
               <a onClick={() => alert("hello")} type="button" className="flex items-center justify-center text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3">
                 Escribir un artículo
