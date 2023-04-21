@@ -71,9 +71,6 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
               <a onClick={() => alert("hello")} type="button" className="flex items-center justify-center text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3">
                 Escribir un artículo
               </a>
-              <a type="button" className="site-header-buttons" style={{ color: "black", backgroundColor: "white"}} onClick={handleOpen}>
-                {text(`SUBSCRIBE_ME`)}
-              </a>
             </div>
           </div>
         </div>
