@@ -153,7 +153,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const limitForPosts = (enable && { limit: maxNumberOfPosts }) || undefined
   const limitForPages = (enable && { limit: maxNumberOfPages }) || undefined
   const posts = await getAllPosts(limitForPosts)
-/*   const pages = await getAllPages(limitForPages) */
+  const pages = await getAllPages(limitForPages)
   const settings = await getAllSettings()
   const { url: cmsUrl } = settings
 
@@ -171,8 +171,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 
   const customRoutes = (contactPageRoute && [contactPageRoute]) || []
-/*   const pageRoutes = (pages as GhostPostsOrPages).map(({ slug, url }) => resolveUrl({ cmsUrl, slug, url })) */
-  const paths = [...postRoutes,/*  ...pageRoutes, */ ...customRoutes]
+  const pageRoutes = (pages as GhostPostsOrPages).map(({ slug, url }) => resolveUrl({ cmsUrl, slug, url }))
+  const paths = [...postRoutes, ...pageRoutes, ...customRoutes]
 
   return {
     paths,
