@@ -170,7 +170,7 @@ html.casper .site-title {
     font-size: 46px;
     line-height: 1em;
     font-weight: 600;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 html.casper .site-logo {
@@ -178,14 +178,16 @@ html.casper .site-logo {
 }
 
 html.casper .site-description {
+    font-family: "Manrope", sans-serif;
     z-index: 10;
     margin: 20px 0;
     padding: 5px 0;
     font-size: 14px;
-    line-height: 1.4em;
+    line-height: 148%;
+    letter-spacing: -0.01em;
     font-weight: 400;
     opacity: 0.8;
-    max-width: 750px;
+    max-width: 800px;
 }
 
 /* 4.1 Home header

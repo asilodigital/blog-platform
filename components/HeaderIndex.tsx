@@ -38,7 +38,7 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
           <SiteNav className="site-nav" {...{ siteUrl, settings }} />
           <div className="site-header-content">
             <h1 className="site-title">
-              {/* title */"La tecnología, explicada por personas como tú"}
+              {/* title */"Contenido tecnológico hecho por humanos"}
              {/*  La tecnología, explicada por personas como tú */}
               {siteLogo && nextFeatureImages ? (
                 <Link href="/">
@@ -66,8 +66,8 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
                 title
               )}
             </h1>
-            <h2 className="site-description">{/* site.description */"Hacemos de la información tecnológica en español algo colaborativo y abierto, manteniendo siempre el enfoque en la comunidad"}</h2>
-            <div className="site-header-buttons-container space-x-6 mr-[20px]">
+            <h2 className="site-description">{/* site.description */"Hacemos que el contenido sea mucho más amigable y entendible en comunidad."}</h2>
+            <div className="site-header-buttons-container space-x-3.5 mr-[22px]">
               <a href="https://www.asilodigital.com/manual/" type="button" className="inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3">
                 Escribir un artículo
               </a>
