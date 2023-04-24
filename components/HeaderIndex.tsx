@@ -67,11 +67,11 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
               )}
             </h1>
             <h2 className="site-description">{/* site.description */"Hacemos de la información tecnológica en español algo colaborativo y abierto, manteniendo siempre el enfoque en la comunidad"}</h2>
-            <div className="site-header-buttons-container">
-              <a href="https://www.asilodigital.com/manual/" type="button" className="flex items-center justify-center text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3">
+            <div className="site-header-buttons-container space-x-6 mr-[20px]">
+              <a href="https://www.asilodigital.com/manual/" type="button" className="inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3">
                 Escribir un artículo
               </a>
-              <a type="button" className="site-header-buttons" style={{ color: "black", backgroundColor: "white"}} onClick={handleOpen}>
+              <a type="button" className="inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-gray-100 decoration-white hover:no-underline text-xl font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3 w-[180px]" style={{ color: "black", backgroundColor: "white"}} onClick={handleOpen}>
                 {text(`SUBSCRIBE_ME`)}
               </a>
             </div>
