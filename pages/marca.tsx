@@ -34,8 +34,8 @@ export default function Marca(props: any) {
 
   return (
     <div>
-      <h1>{pageData.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: pageData.html }} />
+      <h1>{pageData?.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: pageData?.html ?? "<h1>Type Undefined for pageData</h1>" }} />
     </div>
   );
 }
