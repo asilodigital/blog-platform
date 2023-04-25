@@ -37,7 +37,7 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
         <div className="inner">
           <SiteNav className="site-nav" {...{ siteUrl, settings }} />
           <div className="site-header-content">
-            <h1 className="site-title">
+            <h1 className="site-title sm:text-[28px]">
               {/* title */"Contenido tecnológico hecho por humanos"}
              {/*  La tecnología, explicada por personas como tú */}
               {siteLogo && nextFeatureImages ? (
@@ -67,11 +67,11 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
               )}
             </h1>
             <h2 className="site-description">{/* site.description */"Hacemos que el contenido sea mucho más amigable y entendible en comunidad."}</h2>
-            <div className="site-header-buttons-container space-x-3.5 mr-[22px]">
-              <a href="https://www.asilodigital.com/manual/" type="button" className="inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3">
+            <div className="site-header-buttons-container space-x-3.5 md:mr-[22px] sm:mr-0">
+              <a href="https://www.asilodigital.com/manual/" type="button" className="font-manrope inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-center text-xl text-gray-100 decoration-white hover:no-underline font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3 md:w-[180px] sm:w-fit h-[42px]">
                 Escribir un artículo
               </a>
-              <a type="button" className="inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-gray-100 decoration-white hover:no-underline text-xl font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3 w-[180px]" style={{ color: "black", backgroundColor: "white"}} onClick={handleOpen}>
+              <a type="button" className="font-manrope inline-flex items-center justify-center transition-all ease-in-out delay-150 hover:scale-100 hover:-translate-y-1 text-center text-gray-100 decoration-white hover:no-underline text-xl font-semibold cursor-pointer border border-solid border-gray-100 rounded-[37px] px-8 py-3 w-[156px] h-[42px]" style={{ color: "black", backgroundColor: "white"}} onClick={handleOpen}>
                 {text(`SUBSCRIBE_ME`)}
               </a>
             </div>
