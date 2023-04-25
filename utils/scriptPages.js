@@ -43,6 +43,7 @@ async function createRouteFiles() {
 import { useRouter } from "next/router";
 import axios from "axios";
 import { useQuery, UseQueryResult } from "react-query";
+import { ghostAPIUrl, ghostAPIKey } from '@lib/processEnv'
 
 interface Page {
   id: string
@@ -51,14 +52,14 @@ interface Page {
   html: string
 }
 
-export default function ${componentName}() {
+export default function ${componentName}(props: any) {
   const router = useRouter();
   const { pathname: slug } = router;
 
   // Fetch page data from Ghost CMS API
   const getPageData = async (): Promise<Page> => {
     const response = await axios.get(
-      \`\${process.env.CMS_GHOST_API_URL}\/ghost/api/v3/content/pages/slug/\${slug}/?key=\${process.env.CMS_GHOST_API_KEY}\`,
+      \`\${props.ghostAPIUrl}\/ghost/api/v3/content/pages/slug/\${slug}/?key=\${props.ghostAPIKey}\`,
     );
 
     return response.data.pages[0];
@@ -78,6 +79,12 @@ export default function ${componentName}() {
       <div dangerouslySetInnerHTML={{ __html: pageData.html }} />
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  return {
+    props: { ghostAPIUrl, ghostAPIKey }
+  }
 }
     `
     );
