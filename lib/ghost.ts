@@ -54,8 +54,8 @@ export interface GhostTags extends BrowseResults<GhostTag> {}
 export interface GhostAuthors extends BrowseResults<GhostAuthor> {}
 
 const api = new GhostContentAPI({
-  url: ghostAPIUrl,
-  key: ghostAPIKey,
+  url: ghostAPIUrl!,
+  key: ghostAPIKey!,
   version: 'v3',
 })
 
