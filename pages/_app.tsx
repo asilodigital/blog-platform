@@ -8,6 +8,11 @@ import { ThemeProvider } from '@components/contexts/themeProvider'
 import { processEnv } from '@lib/processEnv'
 import * as gtag from '../lib/gtag'
 
+import {
+  QueryClientProvider,
+  QueryClient
+} from 'react-query'
+
 import 'react-toastify/dist/ReactToastify.css';
 import '@styles/screen.css'
 import '@styles/screen-fixings.css'
@@ -28,7 +33,11 @@ function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
+  // Create a client
+const queryClient = new QueryClient()
+
   return (
+    <QueryClientProvider client={queryClient}>
     <ThemeProvider {...processEnv.darkMode} >
       <OverlayProvider >
         {/* Global site tag (gtag.js) - Google Analytics */}
@@ -61,6 +70,7 @@ function App({ Component, pageProps }: AppProps) {
       </OverlayProvider>
       <ToastContainer />
     </ThemeProvider>
+    </QueryClientProvider>
   )
 }
 

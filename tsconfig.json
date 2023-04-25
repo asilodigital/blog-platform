@@ -124,7 +124,8 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "**/tag/*.tsx",
+    "**/**/.js",
+    "**/**/*.tsx",
     "components/common/CannyWidget.jsx"
   ],
   "exclude": [
