@@ -222,24 +222,27 @@ html.casper .site-home-header .site-description {
 
 html.casper .site-home-header .site-header-content .site-header-buttons-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    width: 100%;
 }
 
 html.casper .site-home-header .site-header-content .site-header-buttons-container .site-header-buttons {
     display: block;
-    margin: 0 0 0 10px;
-    padding: 15px 35px;
+    padding: 15px 36px;
     border: #fff 1px solid;
     color: #fff;
     line-height: 1em;
     border-radius: 37px;
     background-color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
 }
 
 @media (max-width: 800px) {
     html.casper .site-home-header .site-header-content .site-header-buttons-container .site-header-buttons {
         font-size: 1.2rem;
-        padding: 15px 32px;
+        padding: 15px 24px;
     }
 }
 
