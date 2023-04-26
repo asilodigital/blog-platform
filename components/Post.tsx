@@ -160,9 +160,9 @@ export const Post = ({ cmsData }: PostProps) => {
                   </div>
                 </section>
 
-                <section className="flex items-start lg:items-center justify-start lg:justify-center flex-col">
+                <section className="flex flex-col items-center justify-items-center gap-6 py-10 lg:pt-0">
                   <p className="not-italic font-bold mb-0">Compártelo para llegue más lejos 🚀</p>
-                  <ShareAsideBar className="pt-[14px] items-start lg:justify-center lg:items-center sm:justify-center" title={description} url={url} />
+                  <ShareAsideBar title={description} url={url} />
                 </section>
 
                 {memberSubscriptions && <Subscribe {...{ settings }} />}
