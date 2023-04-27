@@ -32,7 +32,7 @@ export const AuthorList = ({ settings, authors, isPost }: AuthorListProps) => {
             activeClass="hovered"
             render={(hover) => (
               <li key={i} ref={hover.anchorRef} className="author-list-item">
-                {!isPost && <div className="author-name-tooltip">{author.name}</div>}
+                {isPost && <div className="author-name-tooltip">{author.name}</div>}
                 {isPost && (
                   <div className={`author-card ${hover.state.currentClass}`}>
                     <div className="author-profile-image">

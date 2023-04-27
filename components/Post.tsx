@@ -130,19 +130,12 @@ export const Post = ({ cmsData }: PostProps) => {
                   ))}
 
                   <div className="post-full-byline pb-12">
-                    <section className="post-full-byline-content">
+                    <section className="post-full-byline-content pt-5">
                       <AuthorList {...{ settings, authors: post.authors, isPost: true }} />
 
                       <section className="post-full-byline-meta">
                         <h4 className="author-name">
-                          {post.authors?.map((author, i) => (
-                            <div key={i}>
-                              {i > 0 ? `, ` : ``}
-                              <Link href={resolveUrl({ cmsUrl, slug: author.slug, url: author.url || undefined })}>
-                                <a>{author.name}</a>
-                              </Link>
-                            </div>
-                          ))}
+                          Varios autores
                         </h4>
                         <div className="byline-meta-content">
                           <time className="byline-meta-date" dateTime={post.published_at || ''}>
