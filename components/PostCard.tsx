@@ -85,8 +85,8 @@ export const PostCard = ({ settings, post, num, isHome, isBranded }: PostCardPro
         <footer className="post-card-meta">
           <AuthorList {...{ settings, authors: post.authors }} />
           <div className="post-card-byline-content">
-            {post.authors && post.authors.length > 2 && <span>{text(`MULTIPLE_AUTHORS`)}</span>}
-            {post.authors && post.authors.length < 3 && (
+            {post.authors && post.authors.length > 1 && <span className="text-slate-300">{text(`MULTIPLE_AUTHORS`)}</span>}
+            {post.authors && post.authors.length < 2 && (
               <span>
                 {authors?.map((author, i) => (
                   <div key={i}>

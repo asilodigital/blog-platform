@@ -775,15 +775,26 @@ html.casper .post-card-meta {
     padding: 0;
 }
 
-html.casper .author-profile-image,
+html.casper .author-profile-wrapper-image,
 html.casper .avatar-wrapper {
     display: block;
     width: 100%;
+    max-width: 102px;
     height: 100%;
+    max-height: 102px;
     background: color-mod(var(--lightgrey) l(+10%));
-    border-radius: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
 
+html.casper .author-profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: center;
 }
 
 html.casper .post-card-meta .profile-image-wrapper,

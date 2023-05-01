@@ -44,7 +44,7 @@ interface PostProps {
 
 export const Post = ({ cmsData }: PostProps) => {
   const { post, settings, seoImage, previewPosts, prevPost, nextPost, bodyClass } = cmsData
-  const { slug, url, meta_description, excerpt, title} = post
+  const { slug, url, meta_description, excerpt, title } = post
   const { url: cmsUrl } = settings
   const description = meta_description || excerpt
 
@@ -80,7 +80,7 @@ export const Post = ({ cmsData }: PostProps) => {
                   {post.primary_tag && (
                     <section className="post-full-tags">
                       <Link href={resolveUrl({ cmsUrl, slug: post.primary_tag.slug, url: post.primary_tag.url })}>
-                        <a className='w-[84px] min-w-fit max-w-fit text-black dark:text-white text-center border border-solid border-gray-400 rounded-[22px] my-4 px-6 pb-2 pt-2'>
+                        <a className="w-[84px] min-w-fit max-w-fit text-black dark:text-white text-center border border-solid border-gray-400 rounded-[22px] my-4 px-6 pb-2 pt-2">
                           {post.primary_tag.name}
                         </a>
                       </Link>
@@ -92,7 +92,6 @@ export const Post = ({ cmsData }: PostProps) => {
                   </h1>
 
                   {post.custom_excerpt && <p className="post-full-custom-excerpt">{post.custom_excerpt}</p>}
-
 
                   <ShareAsideBar title={title} description={description} url={url} />
                 </header>
@@ -115,11 +114,10 @@ export const Post = ({ cmsData }: PostProps) => {
                         {...featImg.dimensions}
                       />
 
-                      <figcaption className="w-full flex text-[#999] bg-white dark:bg-[#0E0C15] leading-normal justify-end mt-1 [&>a]:px-1 [&>a]:no-underline [&>a]:text-black dark:[&>a]:text-white"
-
-                        dangerouslySetInnerHTML={{__html: `${post.feature_image_caption ?? ''}`}}>
-
-                      </figcaption>
+                      <figcaption
+                        className="w-full flex text-[#999] bg-white dark:bg-[#0E0C15] leading-normal justify-end mt-1 [&>a]:px-1 [&>a]:no-underline [&>a]:text-black dark:[&>a]:text-white mt-5"
+                        dangerouslySetInnerHTML={{ __html: `${post.feature_image_caption ?? ''}` }}
+                      ></figcaption>
                     </figure>
                   ) : (
                     post.feature_image && (
@@ -129,29 +127,28 @@ export const Post = ({ cmsData }: PostProps) => {
                     )
                   ))}
 
-                  <div className="post-full-byline pb-12">
-                    <section className="post-full-byline-content">
-                      <AuthorList {...{ settings, authors: post.authors, isPost: true }} />
+                <div className="post-full-byline pb-12">
+                  <section className="post-full-byline-content pt-5">
+                    <AuthorList {...{ settings, authors: post.authors, isPost: true }} />
 
-                      <section className="post-full-byline-meta">
-                        <h4 className="author-name">
-                          {post.authors?.map((author, i) => (
-                            <div key={i}>
-                              {i > 0 ? `, ` : ``}
-                              <Link href={resolveUrl({ cmsUrl, slug: author.slug, url: author.url || undefined })}>
-                                <a>{author.name}</a>
-                              </Link>
-                            </div>
-                          ))}
-                        </h4>
-                        <div className="byline-meta-content">
-                          <time className="byline-meta-date" dateTime={post.published_at || ''}>
-                            {dayjs(post.published_at || '').format('D MMMM, YYYY')}&nbsp;
-                          </time>
-                        </div>
-                      </section>
+                    <section className="post-full-byline-meta">
+                      <h4 className="author-name">
+                        {post.authors?.length === 1 ? (
+                          <Link href={resolveUrl({ cmsUrl, slug: post.primary_author?.slug, url: post.primary_author?.url || undefined })}>
+                            <a>{post.primary_author?.name}</a>
+                          </Link>
+                        ) : (
+                          `${text(`MULTIPLE_AUTHORS`)}`
+                        )}
+                      </h4>
+                      <div className="byline-meta-content">
+                        <time className="byline-meta-date" dateTime={post.published_at || ''}>
+                          {dayjs(post.published_at || '').format('D MMMM, YYYY')}&nbsp;
+                        </time>
+                      </div>
                     </section>
-                  </div>
+                  </section>
+                </div>
 
                 <section className="post-full-content">
                   {toc.enable && !!post.toc && <TableOfContents {...{ toc: post.toc, url: resolveUrl({ cmsUrl, collectionPath, slug, url }), maxDepth: toc.maxDepth, lang }} />}
