@@ -35,7 +35,7 @@ export const AuthorList = ({ settings, authors, isPost }: AuthorListProps) => {
                 {!isPost && <div className="author-name-tooltip">{author.name}</div>}
                 {isPost && (
                   <div className={`author-card ${hover.state.currentClass}`}>
-                    <div className="author-profile-wrapper-image">
+                    <div className="author-profile-wrapper-image card">
                       {profileImg && nextImages.feature ? (
                         <Image
                           src={profileImg.url}

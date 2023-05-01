@@ -779,18 +779,26 @@ html.casper .author-profile-wrapper-image,
 html.casper .avatar-wrapper {
     display: block;
     width: 100%;
-    max-width: 102px;
+    max-width: 108px;
     height: 100%;
-    max-height: 102px;
+    max-height: 108px;
     background: color-mod(var(--lightgrey) l(+10%));
     border-radius: 50%;
     aspect-ratio: 1/1;
     overflow: hidden;
 }
 
-html.casper .author-profile-image {
+html.casper .author-profile-wrapper-image.card {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+html.casper .author-profile-wrapper-image > img {
     width: 100%;
     height: 100%;
+}
+
+html.casper .author-profile-image {
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
