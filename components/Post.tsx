@@ -93,7 +93,7 @@ export const Post = ({ cmsData }: PostProps) => {
 
                   {post.custom_excerpt && <p className="post-full-custom-excerpt">{post.custom_excerpt}</p>}
 
-                  <ShareAsideBar className="hidden" title={title} description={description} url={url} />
+                  <ShareAsideBar title={title} description={description} url={url} />
                 </header>
 
                 {featImg &&
@@ -115,7 +115,7 @@ export const Post = ({ cmsData }: PostProps) => {
                       />
 
                       <figcaption
-                        className="w-full flex text-[#999] bg-white dark:bg-[#0E0C15] leading-normal justify-end mt-1 [&>a]:px-1 [&>a]:no-underline [&>a]:text-black dark:[&>a]:text-white"
+                        className="w-full flex text-[#999] bg-white dark:bg-[#0E0C15] leading-normal justify-end mt-1 [&>a]:px-1 [&>a]:no-underline [&>a]:text-black dark:[&>a]:text-white mt-5"
                         dangerouslySetInnerHTML={{ __html: `${post.feature_image_caption ?? ''}` }}
                       ></figcaption>
                     </figure>
@@ -133,9 +133,13 @@ export const Post = ({ cmsData }: PostProps) => {
 
                     <section className="post-full-byline-meta">
                       <h4 className="author-name">
-                        {(post.authors?.length === 1)
-                          ? `${post.primary_author?.name}`
-                          : `${text(`MULTIPLE_AUTHORS`)}`}
+                        {post.authors?.length === 1 ? (
+                          <Link href={resolveUrl({ cmsUrl, slug: post.primary_author?.slug, url: post.primary_author?.url || undefined })}>
+                            <a>{post.primary_author?.name}</a>
+                          </Link>
+                        ) : (
+                          `${text(`MULTIPLE_AUTHORS`)}`
+                        )}
                       </h4>
                       <div className="byline-meta-content">
                         <time className="byline-meta-date" dateTime={post.published_at || ''}>
