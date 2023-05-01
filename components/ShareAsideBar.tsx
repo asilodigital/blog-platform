@@ -2,7 +2,7 @@ import ShareButton from "./common/ShareButtons";
 
 function ShareAsideBar(props: any) {
     return (
-        <div className="flex w-full max-w-7xl justify-center items-center gap-3">
+        <div className="flex w-full max-w-7xl justify-center items-center gap-3 mt-10">
             <ShareButton url={props.url} description={`${props.title} \n\n ${props.description}`} shareIn="Clipboard" />
             <ShareButton url={props.url} description={`${props.title} \n\n ${props.description}`} shareIn="Twitter" />
             <ShareButton url={props.url} description={`${props.title} \n\n ${props.description}`} shareIn="Linkedin" />
