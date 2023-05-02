@@ -222,24 +222,27 @@ html.casper .site-home-header .site-description {
 
 html.casper .site-home-header .site-header-content .site-header-buttons-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    width: 100%;
 }
 
 html.casper .site-home-header .site-header-content .site-header-buttons-container .site-header-buttons {
     display: block;
-    margin: 0 0 0 10px;
-    padding: 15px 35px;
+    padding: 15px 36px;
     border: #fff 1px solid;
     color: #fff;
     line-height: 1em;
     border-radius: 37px;
     background-color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
 }
 
 @media (max-width: 800px) {
     html.casper .site-home-header .site-header-content .site-header-buttons-container .site-header-buttons {
         font-size: 1.2rem;
-        padding: 15px 32px;
+        padding: 15px 24px;
     }
 }
 
@@ -772,15 +775,34 @@ html.casper .post-card-meta {
     padding: 0;
 }
 
-html.casper .author-profile-image,
+html.casper .author-profile-wrapper-image,
 html.casper .avatar-wrapper {
     display: block;
     width: 100%;
+    max-width: 108px;
     height: 100%;
+    max-height: 108px;
     background: color-mod(var(--lightgrey) l(+10%));
-    border-radius: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
 
+html.casper .author-profile-wrapper-image.card {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+html.casper .author-profile-wrapper-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+html.casper .author-profile-image {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
     object-fit: cover;
+    object-position: center;
 }
 
 html.casper .post-card-meta .profile-image-wrapper,

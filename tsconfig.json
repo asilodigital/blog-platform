@@ -123,8 +123,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.js"
-, "components/common/CannyWidget.jsx"  ],
+    "**/*.js",
+    "**/**/.js",
+    "**/**/*.tsx",
+    "components/common/CannyWidget.jsx"
+  ],
   "exclude": [
     "node_modules",
     "types",
