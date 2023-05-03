@@ -1843,7 +1843,7 @@ html.casper .subscribe-form {
     border: color-mod(var(--lightgrey) l(+10%)) 1px solid;
     text-align: center;
     background: linear-gradient(color-mod(var(--whitegrey) l(+6%)), color-mod(var(--whitegrey) l(+4%)));
-    border-radius: 3px;
+    border-radius: 24px;
 }
 
 html.casper .subscribe-form-title {
@@ -1875,11 +1875,12 @@ html.casper .subscribe-form .form-group {
     align-self: stretch;
     display: flex;
     flex-direction: column;
+    gap: 14px;
 }
 
 html.casper .subscribe-email {
     display: block;
-    padding: 10px;
+    padding: 12px 23px;
     width: 100%;
     border: color-mod(var(--lightgrey) l(+7%)) 1px solid;
     color: var(--midgrey);
@@ -1887,7 +1888,7 @@ html.casper .subscribe-email {
     line-height: 1em;
     font-weight: normal;
     user-select: text;
-    border-radius: 5px;
+    border-radius: 26px;
     transition: border-color 0.15s linear;
 
     -webkit-appearance: none;
@@ -1901,9 +1902,6 @@ html.casper .subscribe-email:focus {
 html.casper .subscribe-form button {
     position: relative;
     display: inline-block;
-    margin: 0 0 0 10px;
-    padding: 0 20px;
-    height: 43px;
     outline: none;
     color: #fff;
     font-size: 1.5rem;
@@ -1914,7 +1912,7 @@ html.casper .subscribe-form button {
             color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
             color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
             color-mod(var(--blue) lightness(-4%) saturation(-10%)));
-    border-radius: 5px;
+    border-radius: 26px;
 
     -webkit-font-smoothing: subpixel-antialiased;
 }

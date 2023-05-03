@@ -11,7 +11,7 @@ export const SubscribeForm = ({ settings }: { settings: GhostSettings }) => {
   return (
     <form className={message} data-members-form="subscribe" onSubmit={(ev) => handleSubmit(ev, settings.url)}>
       <div className="form-group">
-        <label htmlFor="email">
+        {/* <label htmlFor="email">
           {text(`EMAIL`)}
           <style jsx>{`
             label {
@@ -21,7 +21,7 @@ export const SubscribeForm = ({ settings }: { settings: GhostSettings }) => {
               overflow: hidden;
             }
           `}</style>
-        </label>
+        </label> */}
         <input
           id="email"
           name="email"
