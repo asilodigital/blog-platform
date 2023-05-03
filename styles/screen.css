@@ -1908,10 +1908,7 @@ html.casper .subscribe-form button {
     line-height: 39px;
     font-weight: 400;
     text-align: center;
-    background: linear-gradient(color-mod(var(--blue) whiteness(+7%)),
-            color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-            color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-            color-mod(var(--blue) lightness(-4%) saturation(-10%)));
+    background: var(--darkmode);
     border-radius: 26px;
 
     -webkit-font-smoothing: subpixel-antialiased;
