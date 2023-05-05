@@ -1838,8 +1838,8 @@ html.casper .basic-info .avatar-wrapper svg {
 /* 7.2. Members Subscribe Form
 /* ---------------------------------------------------------- */
 html.casper .subscribe-form {
-    margin: 1.5em 0;
-    padding: 5.5vw 2vw 4vw;
+    /* margin: 1.5em 0; */
+    padding: 2.5vw 2vw 4vw;
     border: color-mod(var(--lightgrey) l(+10%)) 1px solid;
     text-align: center;
     background: linear-gradient(color-mod(var(--whitegrey) l(+6%)), color-mod(var(--whitegrey) l(+4%)));
@@ -1992,7 +1992,7 @@ html.casper .subscribe-form .error .message-error {
     }
 
     html.casper .subscribe-form button {
-        margin: 10px 0 0 0;
+        /* margin: 10px 0 0 0; */
         width: 100%;
     }
 }
