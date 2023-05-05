@@ -1972,6 +1972,10 @@ html.casper .subscribe-form .error .message-error {
     display: block;
 }
 
+html.casper .subscribe-form-img-mobile {
+    display: none;
+}
+
 
 @media (max-width: 650px) {
     html.casper .subscribe-form-title {
@@ -1980,6 +1984,14 @@ html.casper .subscribe-form .error .message-error {
 
     html.casper .subscribe-form-description {
         font-size: 1.6rem;
+    }
+
+    html.casper .subscribe-form-img-mobile {
+        display: block;
+    }
+
+    html.casper .subscribe-form-img-desktop {
+        display: none;
     }
 }
 
