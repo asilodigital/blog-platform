@@ -1866,6 +1866,7 @@ html.casper .subscribe-form-description {
     color: var(--midgrey);
     font-size: 2.1rem;
     line-height: 1.55em;
+    font-family: 'Manrope';
 }
 
 html.casper .subscribe-form form {
@@ -1875,6 +1876,7 @@ html.casper .subscribe-form form {
     align-items: center;
     margin: 0 auto;
     max-width: 460px;
+    font-family: 'Manrope';
 }
 
 html.casper .subscribe-form .form-group {
