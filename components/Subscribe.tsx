@@ -8,6 +8,7 @@ export const Subscribe = ({ settings }: { settings: GhostSettings }) => {
 
   return (
     <section className="subscribe-form">
+      <img className='subscribe-form-img' src="https://uploads-ssl.webflow.com/603c87adb15be3cb0b3ed9b5/610e34549c43a583678e351c_37.png" alt=""/>
       <h3 className="subscribe-form-title">
         {text(`SUBSCRIBE_TO`)} {title}
       </h3>
