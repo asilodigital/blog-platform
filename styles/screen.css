@@ -1838,12 +1838,18 @@ html.casper .basic-info .avatar-wrapper svg {
 /* 7.2. Members Subscribe Form
 /* ---------------------------------------------------------- */
 html.casper .subscribe-form {
-    margin: 1.5em 0;
-    padding: 5.5vw 2vw 4vw;
+    /* margin: 1.5em 0; */
+    padding: 2.5vw 2vw 4vw;
     border: color-mod(var(--lightgrey) l(+10%)) 1px solid;
     text-align: center;
     background: linear-gradient(color-mod(var(--whitegrey) l(+6%)), color-mod(var(--whitegrey) l(+4%)));
-    border-radius: 3px;
+    border-radius: 24px;
+}
+
+html.casper .subscribe-form-img {
+    inline-size: 30%;
+    aspect-ratio: 4/3;
+    margin-inline: auto;
 }
 
 html.casper .subscribe-form-title {
@@ -1860,6 +1866,7 @@ html.casper .subscribe-form-description {
     color: var(--midgrey);
     font-size: 2.1rem;
     line-height: 1.55em;
+    font-family: 'Manrope';
 }
 
 html.casper .subscribe-form form {
@@ -1869,17 +1876,19 @@ html.casper .subscribe-form form {
     align-items: center;
     margin: 0 auto;
     max-width: 460px;
+    font-family: 'Manrope';
 }
 
 html.casper .subscribe-form .form-group {
     align-self: stretch;
     display: flex;
     flex-direction: column;
+    gap: 14px;
 }
 
 html.casper .subscribe-email {
     display: block;
-    padding: 10px;
+    padding: 12px 23px;
     width: 100%;
     border: color-mod(var(--lightgrey) l(+7%)) 1px solid;
     color: var(--midgrey);
@@ -1887,7 +1896,7 @@ html.casper .subscribe-email {
     line-height: 1em;
     font-weight: normal;
     user-select: text;
-    border-radius: 5px;
+    border-radius: 26px;
     transition: border-color 0.15s linear;
 
     -webkit-appearance: none;
@@ -1901,20 +1910,14 @@ html.casper .subscribe-email:focus {
 html.casper .subscribe-form button {
     position: relative;
     display: inline-block;
-    margin: 0 0 0 10px;
-    padding: 0 20px;
-    height: 43px;
     outline: none;
     color: #fff;
     font-size: 1.5rem;
     line-height: 39px;
     font-weight: 400;
     text-align: center;
-    background: linear-gradient(color-mod(var(--blue) whiteness(+7%)),
-            color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-            color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-            color-mod(var(--blue) lightness(-4%) saturation(-10%)));
-    border-radius: 5px;
+    background: var(--darkmode);
+    border-radius: 26px;
 
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -1969,6 +1972,10 @@ html.casper .subscribe-form .error .message-error {
     display: block;
 }
 
+html.casper .subscribe-form-img-mobile {
+    display: none;
+}
+
 
 @media (max-width: 650px) {
     html.casper .subscribe-form-title {
@@ -1977,6 +1984,14 @@ html.casper .subscribe-form .error .message-error {
 
     html.casper .subscribe-form-description {
         font-size: 1.6rem;
+    }
+
+    html.casper .subscribe-form-img-mobile {
+        display: block;
+    }
+
+    html.casper .subscribe-form-img-desktop {
+        display: none;
     }
 }
 
@@ -1991,7 +2006,7 @@ html.casper .subscribe-form .error .message-error {
     }
 
     html.casper .subscribe-form button {
-        margin: 10px 0 0 0;
+        /* margin: 10px 0 0 0; */
         width: 100%;
     }
 }

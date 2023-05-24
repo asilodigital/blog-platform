@@ -223,6 +223,9 @@ html.casper body.dark .subscribe-email:focus {
 
 html.casper body.dark .subscribe-form button {
   opacity: 0.9;
+  background-color: #fff;
+  color: var(--darkmode);
+  border-color: #fff;
 }
 
 html.casper body.dark .subscribe-form .invalid .message-error,
