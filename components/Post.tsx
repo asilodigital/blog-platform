@@ -80,7 +80,7 @@ export const Post = ({ cmsData }: PostProps) => {
                   {post.primary_tag && (
                     <section className="post-full-tags">
                       <Link href={resolveUrl({ cmsUrl, slug: post.primary_tag.slug, url: post.primary_tag.url })}>
-                        <a className='w-[84px] min-w-min text-black dark:text-white text-center border border-solid border-gray-400 rounded-[22px] my-4 px-6 pb-2 pt-1'>
+                        <a className='min-w-min text-black dark:text-white text-center border border-solid border-gray-400 rounded-[22px] my-4 px-6 pb-2 pt-2'>
                           {post.primary_tag.name}
                         </a>
                       </Link>
