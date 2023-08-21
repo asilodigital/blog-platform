@@ -168,8 +168,58 @@ html.casper body.dark .post-full-content .kg-bookmark-container:hover {
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
 }
 
-html.casper .post-full-content input {
+html.casper body.dark .post-full-content input {
   color: color-mod(var(--midgrey) l(-30%));
+}
+
+html.casper body.dark .read-next {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: color-mod(var(--darkgrey) l(-5%));
+}
+
+html.casper body.dark .read-next-card {
+  background: linear-gradient(color-mod(var(--darkgrey) l(+2%)), color-mod(var(--darkgrey) l(-5%)));
+}
+
+html.casper body.dark .read-next-card-header h3 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+html.casper body.dark .read-next-card-header h3 a {
+  color: #fff;
+}
+
+html.casper body.dark .read-next-card-content li {
+  border-bottom: rgba(255, 255, 255, 0.1);
+}
+
+html.casper body.dark .read-next-card-content li a {
+  color: #fff;
+}
+
+html.casper body.dark .read-next-card-meta p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+html.casper body.dark .read-next-card-footer a {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+html.casper body.dark .read-next-card-footer a:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+html.casper body.dark .read-next .post-card-byline-date {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 650px) {
+  html.casper body.dark .read-next .post-card {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 html.casper body.dark .kg-bookmark-title {
@@ -235,4 +285,28 @@ html.casper body.dark .subscribe-form .error .message-error {
 
 html.casper body.dark .subscribe-form .success .message-success {
   color: color-mod(var(--green) l(+5%) s(-5%));
+}
+
+html.casper body.dark .site-footer {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: #fff;
+  background: color-mod(var(--darkgrey) l(-5%));
+}
+
+html.casper body.dark .site-footer-content {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+html.casper body.dark .site-footer-content a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+html.casper body.dark .site-footer-content a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+html.casper body.dark .site-footer-nav a:before {
+  background: #fff;
 }

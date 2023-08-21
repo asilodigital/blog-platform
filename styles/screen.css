@@ -2025,8 +2025,8 @@ html.casper .post-full-comments {
 /* ---------------------------------------------------------- */
 
 html.casper .read-next {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background: color-mod(var(--darkgrey) l(-5%));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: hsl(0, 0%, 96%);
 }
 
 html.casper .read-next-feed {
@@ -2046,12 +2046,12 @@ html.casper .read-next .post-card:after {
 }
 
 html.casper .read-next .post-card-primary-tag {
-    color: #fff;
+    color: #000;
     opacity: 0.6;
 }
 
 html.casper .read-next .post-card-title {
-    color: #fff;
+    color: #000;
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }
@@ -2061,7 +2061,7 @@ html.casper .read-next .post-card:hover .post-card-image {
 }
 
 html.casper .read-next .post-card-excerpt {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 html.casper .read-next .static-avatar {
@@ -2069,11 +2069,11 @@ html.casper .read-next .static-avatar {
 }
 
 html.casper .read-next .post-card-byline-content {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 html.casper .read-next .post-card-byline-content a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 html.casper .read-next-card {
@@ -2084,7 +2084,7 @@ html.casper .read-next-card {
     overflow: hidden;
     margin: 0 25px 50px;
     padding: 25px;
-    background: linear-gradient(color-mod(var(--darkgrey) l(+2%)), color-mod(var(--darkgrey) l(-5%)));
+    background: linear-gradient(color-mod(#fff l(-8%)), color-mod(#fff l(-10%)));
     border-radius: 3px;
 }
 
@@ -2098,7 +2098,7 @@ html.casper .read-next-card a:hover {
 
 html.casper .read-next-card-header h3 {
     margin: 0;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 1.2rem;
     line-height: 1em;
     font-weight: 300;
@@ -2107,7 +2107,7 @@ html.casper .read-next-card-header h3 {
 }
 
 html.casper .read-next-card-header h3 a {
-    color: #fff;
+    color: #000;
     font-weight: 500;
     text-decoration: none;
     opacity: 0.8;
@@ -2135,7 +2135,7 @@ html.casper .read-next-card-content li {
     align-items: flex-start;
     margin: 0;
     padding: 20px 0;
-    border-bottom: rgba(255, 255, 255, 0.1);
+    border-bottom: rgba(0, 0, 0, 0.1);
 }
 
 html.casper .read-next-card-content li:last-of-type {
@@ -2152,7 +2152,7 @@ html.casper .read-next-card-content h4 {
 
 html.casper .read-next-card-content li a {
     display: block;
-    color: #fff;
+    color: #000;
     opacity: 0.8;
 }
 
@@ -2177,7 +2177,7 @@ html.casper .read-next-card-meta {
 
 html.casper .read-next-card-meta p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 html.casper .read-next-card-footer {
@@ -2187,8 +2187,8 @@ html.casper .read-next-card-footer {
 
 html.casper .read-next-card-footer a {
     padding: 7px 12px 8px 14px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 1.3rem;
     border-radius: 999px;
     transition: all 0.35s ease-in-out;
@@ -2224,7 +2224,7 @@ html.casper .read-next-card-footer a:hover {
         flex: 1 1 auto;
         margin: 25px;
         padding: 25px 0 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -2999,8 +2999,8 @@ html.casper .site-footer {
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
-    color: #fff;
-    background: color-mod(var(--darkgrey) l(-5%));
+    color: #000;
+    background: hsl(0, 0%, 96%);
 }
 
 html.casper .site-footer-content {
@@ -3008,16 +3008,16 @@ html.casper .site-footer-content {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 1.3rem;
 }
 
 html.casper .site-footer-content a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 html.casper .site-footer-content a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
     text-decoration: none;
 }
 
@@ -3038,7 +3038,7 @@ html.casper .site-footer-nav a:before {
     display: block;
     width: 2px;
     height: 2px;
-    background: #fff;
+    background: #000;
     border-radius: 100%;
 }
 
